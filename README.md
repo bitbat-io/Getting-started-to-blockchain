@@ -152,4 +152,11 @@ The key idea of blockchain is that one has to perform some work to put data in i
 
 The concept of mining in blockchain is very similar of real work mining `to get gold, one has to work hard`.
 In blockchain, some participants(miners) of the network work to sustain the network, to add new blocks to it, and get reward for their work👷.
+As a result of their work, a block is incorporated into blockchain in a secure way, which maintains the stability of rhe  whole blockchain database. 
+
+This whole `do hard work and prove` mechanism is called proof-of-work. It's hard because it requires lot's of computation power to perform this operation, Even high performance computers cannot do it quickly. 
+
+Moreover, the difficulty of this work is increases from time to time to keep new blocks are ar about 6 - 8 blocks per hour. In **Bitcoin**, the goal of such work is to find a hash for a block, that meets some requirements. It's this hash that serves the proof of work. Thus finding the proof is actual work.
+
+Calculating the new hash that meets the some preset requirements is hard to calculate but easy to verify, thus it a **NP-Complete** type problem.
 
