@@ -16,7 +16,7 @@ Let's start with the 'BLOCK' part of 'blockchain'. In blockchain it's blocks tha
 ``` es6
 class Block {
  constructor(Data) {
-   this.Timestamp; //int64
+   this.Timestamp; //number
    this.Data = Data; //string
    this.PrevBlockHash; //string
    this.Hash; //string
