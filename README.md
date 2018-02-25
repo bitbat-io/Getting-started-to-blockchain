@@ -65,3 +65,44 @@ Les's create our first block of our blockchain -
 ```es6
 const Block1 = new Block('This is new data', 'PREVIOUS_BLOCK_HASH');
 ```
+
+## Blockchain
+
+Blockchain is just a list of bunch of data blocks or we can say some type of glorified linked list. i In simple linked list each `node` of `linked list` is storing address of previous node to keep track of sequence.
+
+```
+simple linked list
+ NODE0 --> NODE1 --> NODE2 --> NODE3
+```
+
+The blocks are store in order of insertion i.e latest block will be sotred on the edge of blockchain.
+this structure makes it quickly to get the latest block in a chain and get efficienty by its hash;
+
+```es6
+class Blockchain {
+ constructor() {
+  this.blocks = [] // array of Blocks
+ }
+ ...
+}
+```
+This is out first blockchain!!!
+I’ve never thought it would be so easy 😉
+
+Let's implement the function to add new block
+
+```es6
+class Blockchain {
+ constructor() {
+  this.blocks = [] // array of Blocks
+  }
+  
+  /**
+   * Function to add new block to blockchain 
+   * data {string} - valuable data, which we want to store in block
+   **/
+  addBlock(data) {
+   
+  }
+ }
+```
