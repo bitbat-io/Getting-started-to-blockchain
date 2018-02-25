@@ -142,3 +142,14 @@ class Blockchain {
 ```
 
 
+# 2. Proof of Work
+
+In previous section we seen how to build simple blockchain class and push new blocks  to the blockchain by simply calculating hash of concataion of **data**, **timestamp** and **previous block hash** but in real world blockchain adding new block to blockchain takes very high computation power. Our previous blockchain has flaw that adding block is cheat and easy.
+
+## Proof of Work
+
+The key idea of blockchain is that one has to perform some work to put data in it. It is this hard work maksed blockchain **secure** and **consistent**. also reward is paid for this hard work(🤑🤑mining🤑🤑)
+
+The concept of mining in blockchain is very similar of real work mining `to get gold, one has to work hard`.
+In blockchain, some participants(miners) of the network work to sustain the network, to add new blocks to it, and get reward for their work👷.
+
