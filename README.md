@@ -59,3 +59,9 @@ class Block {
  }
 }
 ```
+
+Les's create our first block of our blockchain - 
+
+```es6
+const Block1 = new Block('This is new data', 'PREVIOUS_BLOCK_HASH');
+```
