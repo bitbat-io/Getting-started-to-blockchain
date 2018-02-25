@@ -57,6 +57,10 @@ class Block {
   const hash = sha256(headers);
   return hash;
  }
+ 
+ getHash() {
+  return this.Hash;
+ }
 }
 ```
 
@@ -102,7 +106,37 @@ class Blockchain {
    * data {string} - valuable data, which we want to store in block
    **/
   addBlock(data) {
-   
+    const prevBlock = this.blocks[this.blocks.length - 1];
+    const newBlock = new Block(data, prevBlock.getHash());
+    this.blocks = this.blocks.push(newBlock); // push new block to blockchain
+  }
+ }
+```
+
+To add new block we need at least one block to have PrevBlockHash, but their is no block when blockchain is created.
+Thus their must be at least one block in blockchain. The very initial block of blockchain is called `genesis block`.
+
+```es6
+class Blockchain {
+ constructor() {
+  this.blocks = this.initializeBlockchain();
+  }
+   /**
+   * Function to initialize blockchain
+   * by creating genesis block
+   **/
+  initializeBlockchain() {
+   return [new Block('Genesis Block', '')];
+  }
+  
+  /**
+   * Function to add new block to blockchain 
+   * data {string} - valuable data, which we want to store in block
+   **/
+  addBlock(data) {
+    const prevBlock = this.blocks[this.blocks.length - 1];
+    const newBlock = new Block(data, prevBlock.getHash());
+    this.blocks = this.blocks.push(newBlock); // push new block to blockchain
   }
  }
 ```
