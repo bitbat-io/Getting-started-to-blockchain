@@ -13,11 +13,14 @@ consent of other keepers of the database.
 Let's start with the 'BLOCK' part of 'blockchain'. In blockchain it's blocks that sote valuable information. For example, bitcoin blocks store transactions, the essence of any cryptocurrency. Besides this, a block contains some technical information, like its version, current timestamp and the hash of the pervious block.
 
 
-``` golang
-type Block struct {
- Timestamp int64
- Data []byte
- PrevBlockHash []byte
- Hash []byte
+``` es6
+class Block {
+ constructor(Data) {
+   this.Timestamp; //int64
+   this.Data = Data; //string
+   this.PrevBlockHash; //string
+   this.Hash; //string
+ }
+ ...
 }
 ```
