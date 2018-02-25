@@ -24,3 +24,9 @@ class Block {
  ...
 }
 ```
+Let's explain all these terms.
+- **Timestamp** is the timestamp of the time when the block is created.
+- **Data** is the valuable information which we want to store.
+- **PrevBlockHash** hash string of previous block
+- **Hash** hash of current block
+
