@@ -160,3 +160,12 @@ Moreover, the difficulty of this work is increases from time to time to keep new
 
 Calculating the new hash that meets the some preset requirements is hard to calculate but easy to verify, thus it a **NP-Complete** type problem.
 
+## Hashcash
+Bitcoin uses **hashcahs**, a Proof of Work algorithm that was initially developed to for email spam prevention. Ot can be split into these steps - 
+- Take some public data (in email its receiver email address and in bitcoin its block header)
+- Add a counter to it.
+- Get a hash of the (data + counter) combined.
+- Check if it's meet certain requirements
+-- if it dose then you are done
+-- else increase counter and repeat the process
+
