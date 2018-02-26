@@ -173,4 +173,16 @@ This is a brute force algorithm: you has to increase counter, and calculate hash
 
 Now let's look closer at the requirements a hash has to meet. In the original Hashcash implementation, the requirement sounds like 'first 20 bits of a hash must be zeros'. In bitcoin, the requirement is adjusted from time to time, because by design, a block must be generated every 10 minutes, despite computation power increasing with time and more and more miners joining the network.
 
+Lets create our requirement that hash has to starts with 3 zero-bytes:
+```
+'I Like Blockdag' ---> SHA256(...) ---> 00000000345abs34scdc.......
+```
+
+### Implimentation
+
+First, let's define the difficulty of mining
+```es6
+const targetBits = 24;
+```
+
 
