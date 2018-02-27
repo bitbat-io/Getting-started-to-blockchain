@@ -185,4 +185,21 @@ First, let's define the difficulty of mining
 const targetBits = 24;
 ```
 
+In bitcoin **targetBits** is the amount of difficulty at which bitcoins are mined and these targetBits are stored in header part of block. In actual bitcoin blockchain their is an ***targetBits*** adjustment algorithm that increase the difficulty of amount over the time.
+***We will not implement this algoritm for sake of simplicity.***🤗
+
+24 is an arbitrary number, our goal is to have a target that takes less than 256 bits in memory. Difficulty must be significantly enought but not too much.
+
+```es6
+class ProofOfWork {
+ constructor() {
+  this.block;
+  this.target;
+ }
+ 
+ NewProofOfWork() {
+  
+ }
+}
+````
 
