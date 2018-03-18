@@ -1,4 +1,4 @@
-# 1. Intoduction & Basic Prototype
+# 1. Intoduction and Basic Prototype
 
 
 Blockchain is the one of most revolutionary technology of 21st century, which is still maturing 
